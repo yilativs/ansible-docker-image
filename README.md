@@ -5,7 +5,7 @@ thus allowing to have a latest version of anisble in any operating system suppor
 # Usage:
 Create a container:
 ~~~
-docker create  --name ansible-playground -v /home/yourAccount/ansible-config:/etc/ansible -v /home/yourAccount/.ssh:/home/ansible/.ssh -it yilativs/ansible:2.6
+docker create  --name ansible-playground -v /home/yourAccount/ansible-config:/home/yourAccount/ansible-config -v /home/yourAccount/.ssh:/home/ansible/.ssh -it yilativs/ansible:2.6
 docker start -i ansible-playground
 ~~~
 
