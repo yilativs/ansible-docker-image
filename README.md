@@ -1,5 +1,5 @@
 # ansible-docker-image
-Provides a docker image with ansible, open-sshclient, vim, bash-completions and  volumes to import ansible configs and ssh keys from local system,
+Provides a docker image with ansible, open-sshclient, bash-completions for ansible and volumes to import ansible configs and ssh keys from local system,
 thus allowing to have a latest version of anisble in any operating system supporing docker (windows, macos, linux).
 
 # Usage:
