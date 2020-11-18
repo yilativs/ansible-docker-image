@@ -1,16 +1,15 @@
 # ansible-docker-image
-Provides a docker image with ansible, open-sshclient, bash-completions for ansible and volumes to import ansible configs and ssh keys from local system,
-thus allowing to have a multiple versions of ansible on same computer.
+Provides a docker image with pre-installed ansible and ansible-lint,molecule,open-sshclient,bash-completions  and defined volumes to import ansible configs and ssh keys from local system, thus allowing to have a multiple versions of ansible on same computer per project.
 
 # Usage:
 Build container (optional)
-docker build -t yilativs/ansible:2.9.0 .
+docker build -t yilativs/ansible:2.9.3 .
 
 
 
 Create a container:
 ~~~
-docker create  --name ansible4yourProject -v /home/yourAccount/yourProject/ansible-config-dir:/etc/ansible -v /home/yourAccount/.ssh:/home/ansible/.ssh -it yilativs/ansible:2.9
+docker create  --name ansible4yourProject -v /home/yourAccount/yourProject/ansible-config-dir:/etc/ansible -v /home/yourAccount/.ssh:/home/ansible/.ssh -it yilativs/ansible:2.9.3
 docker start -i ansible4yourProject
 ~~~
 
